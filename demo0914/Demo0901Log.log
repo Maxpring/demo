@@ -1,0 +1,24 @@
+2020-09-12 17:19:29.213  INFO 28668 --- [main] com.zjrcu.alan.AlanApplication           : Starting AlanApplication on DESKTOP-5KEUFUG with PID 28668 (F:\works\workspace\testing\demo0914\target\classes started by zykma in F:\works\workspace\testing\demo0914)
+2020-09-12 17:19:29.213  INFO 28668 --- [main] com.zjrcu.alan.AlanApplication           : The following profiles are active: druid
+2020-09-12 17:19:30.057  INFO 28668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-09-12 17:19:30.063  INFO 28668 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 JDBC repository interfaces.
+2020-09-12 17:19:30.152  WARN 28668 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.zjrcu.alan]' package. Please check your configuration.
+2020-09-12 17:19:30.549  INFO 28668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-12 17:19:30.553  INFO 28668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-12 17:19:30.553  INFO 28668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-09-12 17:19:30.553  INFO 28668 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.21] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-09-12 17:19:30.553  INFO 28668 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2020-09-12 17:19:30.553  INFO 28668 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-09-12 17:19:30.553  INFO 28668 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-09-12 17:19:30.562  INFO 28668 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2020-09-12 17:19:30.703  INFO 28668 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-12 17:19:30.703  INFO 28668 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1416 ms
+2020-09-12 17:19:30.933  INFO 28668 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-12 17:19:31.038  WARN 28668 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-09-12 17:19:31.068  INFO 28668 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2020-09-12 17:19:31.333  INFO 28668 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-12 17:19:31.723  INFO 28668 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-12 17:19:31.733  INFO 28668 --- [main] com.zjrcu.alan.AlanApplication           : Started AlanApplication in 3.108 seconds (JVM running for 5.108)
+2020-09-12 17:19:44.278  INFO 28668 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-12 17:19:44.279  INFO 28668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-12 17:19:44.286  INFO 28668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms

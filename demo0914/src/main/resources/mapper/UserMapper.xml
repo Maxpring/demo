@@ -1,0 +1,51 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD com.example.Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjrcu.alan.mapper.UserMapper">
+    <resultMap id="result" type="com.zjrcu.alan.entities.User">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="password" column="password"/>
+        <result property="phone" column="phone"/>
+
+    </resultMap>
+
+    <!--  查询所有用户  -->
+    <select id="getUser" resultMap="result">
+        SELECT * FROM user
+    </select>
+
+    <!-- 按name查询用户 -->
+    <select id="getUserById" resultMap="result">
+        SELECT * FROM user where id=#{id}
+    </select>
+
+    <!-- 按name查询用户 -->
+    <select id="getUserByName" resultMap="result">
+        SELECT * FROM user where name=#{name}
+    </select>
+
+    <!--    -->
+    <insert id="insertUser" parameterType="com.zjrcu.alan.entities.User"
+            keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO user
+        (
+        id,name,password,phone
+        )
+        VALUES (
+        #{id},
+        #{name, jdbcType=VARCHAR},
+        #{password, jdbcType=VARCHAR},
+        #{phone}
+        )
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from user where id=#{id}
+    </delete>
+
+    <update id="Update" parameterType="com.zjrcu.alan.entities.User">
+        update user set user.name=#{name},user.password=#{password},user.phone=#{phone} where user.id=#{id}
+    </update>
+</mapper>

@@ -1,0 +1,55 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD com.example.Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjrcu.alan.mapper.TbuserMapper">
+    <resultMap id="result" type="com.zjrcu.alan.entities.Tbuser">
+        <result property="id" column="id"/>
+        <result property="name" column="user_name"/>
+        <result property="password" column="password"/>
+        <result property="userName" column="user_name"/>
+        <result property="birthday" column="birthday"/>
+        <result property="sex" column="sex"/>
+        <result property="note" column="note"/>
+        <result property="created" column="created"/>
+        <result property="updated" column="updated"/>
+    </resultMap>
+
+    <!--  查询所有用户  -->
+    <select id="getTbuser" resultMap="result">
+        SELECT * FROM tb_user
+    </select>
+
+    <!-- 按name查询用户 -->
+    <select id="getTbuserById" resultMap="result">
+        SELECT * FROM tb_user where id=#{id}
+    </select>
+
+    <!-- 按name查询用户 -->
+    <select id="getTbuserByName" resultMap="result">
+        SELECT * FROM user where name=#{name}
+    </select>
+
+    <!--    -->
+    <!--<insert id="insertUser" parameterType="com.zjrcu.alan.entities.Tbuser"
+            keyProperty="id" useGeneratedKeys="true">
+      INSERT INTO user
+      (
+      id,name,password,phone
+      )
+      VALUES (
+      #{id},
+      #{name, jdbcType=VARCHAR},
+      #{password, jdbcType=VARCHAR},
+      #{phone}
+      )
+   </insert>-->
+    <!--
+        <delete id="delete" parameterType="int">
+          delete from user where id=#{id}
+       </delete>-->
+
+    <!--<update id="Update" parameterType="com.zjrcu.alan.entities.User">
+   update user set user.name=#{name},user.password=#{password},user.phone=#{phone} where user.id=#{id}
+   </update>-->
+</mapper>
